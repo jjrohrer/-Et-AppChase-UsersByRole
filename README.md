@@ -9,3 +9,6 @@ This WordPress plugin adds a back-end Users by Role menu item, which is meant to
 
 # Status
 This works.
+
+# Screenshots
+!(/screenshots/Users.png)
