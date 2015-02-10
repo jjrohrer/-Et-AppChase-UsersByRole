@@ -1,0 +1,18 @@
+.block_item{
+	text-align:center;
+}
+.block_item img{
+	widt1h:100%;
+}
+.mat_title{
+	display:inline;
+}
+.add_to_cart_inline{
+	border:0px !important;
+}
+.add_to_cart_inline .amount{
+	display:none;
+}
+.added_to_cart{
+	margin-left: 30px;
+}
