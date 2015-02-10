@@ -11,4 +11,8 @@ This WordPress plugin adds a back-end Users by Role menu item, which is meant to
 This works.
 
 # Screenshots
-!(/screenshots/Users.png)
+![Users](/screenshots/Users.png)
+
+![Settings](/screenshots/Settings.png)
+
+![Menu Fly Out](/screenshots/menu flyout.png)
