@@ -2,12 +2,13 @@
 /*
 Plugin Name: ET AppChase Users by Roles
 Plugin URI:
-Description: This plugin shows Users by Role with ability to skip some
+Description: This plugin shows Users by Role with ability to skip some.
 Version: 0.80
 Author: Evgen "EvgenDob" Dobrzhanskiy & JJ Rohrer
 Author URI: https://github.com/jjrohrer/Et-AppChase-Users-by-Role
 Author URI: http://www.ascendly.com/about/
 GitHub Plugin URI: https://github.com/jjrohrer/Et-AppChase-Users-by-Role
+Requires:
 */
 $capability_needed_to_view_menu = 'et_rapid_list_operational_users';
 $capability_needed_to_view_settings_menu = 'et_rapid_options';
