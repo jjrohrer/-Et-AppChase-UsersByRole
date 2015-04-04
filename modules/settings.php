@@ -11,9 +11,10 @@ function wal_settings_menu() {
     }
 
 
-    $capability_needed_to_view_menu = 'et_rapid_options';
-    if( current_user_can( $capability_needed_to_view_menu ) ){
-		add_menu_page( 'Users by Role', __('All Users'), $capability_needed_to_view_menu, 'wal_top_menu', 'wal_top_menu' );
+    //$capability_needed_to_view_menu = 'et_rapid_options';
+    global $capability_needed_to_view_menu ;
+    if( current_user_can( $capability_needed_to_view_menu ) && current_user_can( 'list_users' ) ){
+        add_menu_page( 'Users by Role', __('All Users'), $capability_needed_to_view_menu, 'wal_top_menu', 'wal_top_menu' );
 		
 		global $wp_roles;
 
