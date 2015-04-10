@@ -5,7 +5,7 @@ add_action('admin_menu', 'wal_settings_menu');
 
 function wal_settings_menu() {
     global $capability_needed_to_view_settings_menu;
-	if ( current_user_can( $capability_needed_to_view_settings_menu ) ) {//et_rapid_options
+	if ( current_user_can( $capability_needed_to_view_settings_menu ) || is_super_admin() ) {//et_rapid_options
         add_menu_page(  __('Roles Settings', 'sc'), __('Users by Role Settings', 'sc'), $capability_needed_to_view_settings_menu, 'wws_config1', 'wws_config1');
 	} else {
     }
