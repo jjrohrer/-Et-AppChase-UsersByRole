@@ -10,7 +10,7 @@ Author URI: http://www.ascendly.com/about/
 GitHub Plugin URI: https://github.com/jjrohrer/-Et-AppChase-UsersByRole
 Requires:
 */
-$capability_needed_to_view_menu = 'etac_operator';//'et_rapid_list_operational_users';
+$capability_needed_to_view_menu = 'etac_operator';// Hint: user also needs 'list_users' capability;
 $capability_needed_to_view_settings_menu = 'etac_dynadev_devconfigurer';
 
 #include('modules/functions.php');
