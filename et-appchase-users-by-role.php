@@ -11,7 +11,7 @@ GitHub Plugin URI: https://github.com/jjrohrer/-Et-AppChase-UsersByRole
 Requires:
 */
 $capability_needed_to_view_menu = 'etac_operator';// Hint: user also needs 'list_users' capability;
-$capability_needed_to_view_settings_menu = 'etac_dynadev_devconfigurer';
+$capability_needed_to_view_settings_menu = 'etac_dynadev';
 
 #include('modules/functions.php');
 #include('modules/shortcodes.php');
