@@ -14,7 +14,7 @@ function wal_settings_menu() {
     //$capability_needed_to_view_menu = 'et_rapid_options';
     global $capability_needed_to_view_menu ;
     if( current_user_can( $capability_needed_to_view_menu ) && current_user_can( 'list_users' ) ){
-        add_menu_page( 'Users by Role', __('All Users'), $capability_needed_to_view_menu, 'wal_top_menu', 'wal_top_menu' );
+        add_menu_page( 'Users by Role', __('All Users'), $capability_needed_to_view_menu, 'wal_top_menu', 'wal_top_menu' ,"dashicons-groups");
 		
 		global $wp_roles;
 
@@ -58,7 +58,13 @@ function wws_config1(){
   <?php endif; ?> 
 <form class="form-horizontal" method="post" action="">
 <?php wp_nonce_field();  
-$config = get_option('wal_options'); 
+$config = get_option('wal_options');;//ClsDeepDefaults::get_option('wal_options',['Administrator']);//get_option('wal_options');
+if (empty($config['hide_users'])) {
+    $config['hide_users'] = ['Administrator'];
+}
+//print "<br>".__FILE__.__LINE__.__METHOD__."<br>"."<pre>";
+//print_r($config);
+//print "</pre>";
 
 //var_dump( $config );
 
