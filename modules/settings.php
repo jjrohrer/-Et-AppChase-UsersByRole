@@ -58,7 +58,7 @@ function wws_config1(){
   <?php endif; ?> 
 <form class="form-horizontal" method="post" action="">
 <?php wp_nonce_field();  
-$config = get_option('wal_options');;//ClsDeepDefaults::get_option('wal_options',['Administrator']);//get_option('wal_options');
+$config = get_option('wal_options');;//ClsEtacOption::get_option('wal_options',['Administrator']);//get_option('wal_options');
 if (empty($config['hide_users'])) {
     $config['hide_users'] = ['Administrator'];
 }
